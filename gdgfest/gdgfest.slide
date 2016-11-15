@@ -14,8 +14,8 @@ Some Text
 
 * Sample code
 
-* Hello Py 
-.play hello.py 
+* Hello fib 
+.play fib.go 
 
 
 Some Text
