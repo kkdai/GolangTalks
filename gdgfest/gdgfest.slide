@@ -12,4 +12,10 @@ Some Text
 
 * Title of slide or section (must have asterisk)
 
+* Sample code
+
+* Hello Py 
+.play hello.py 
+
+
 Some Text
