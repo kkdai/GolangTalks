@@ -18,13 +18,50 @@ Some Text
 - Developer, Curator, Blogger
 
 
-* Agenda
+* Programming Go
 
+.image go-dock.png
+
+* How to be a great programmer
+
+.image great-go.png
+
+* Whis is Golang?
+
+Create by Google (That's why I here :p)
+
+Design by
+
+- Ken Thompson
+- Rob Pike
+- Robert Griesemer
+
+Feature:
+
+- Compiled
+- Statically Typed
+- Garbage Collection
+
+* Why?
+
+Fast 
+
+
+Make programming fun again
+
+* Go is Fast 
+
+.image go-fast.png
+
+* Make programming fun again - gofmt
+
+[[https://play.golang.org/p/EqGFeNyrHJ][Code is here]]
+
+.image gofmt.png
 
 * Sample code
 
 * Hello fib 
 .play fib.go 
 
-
-Some Text
+slide is [[https://github.com/kkdai/golangtalks][here]]
