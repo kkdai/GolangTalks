@@ -44,10 +44,9 @@ Feature:
 
 * Why?
 
-Fast 
+Fast!
 
-
-Make programming fun again
+Make Programming *FUN* again!
 
 - gofmt
 - well-define packages
@@ -84,7 +83,57 @@ Golang have well-define package, such as :
 if you use https and golang version is bigger than 1.6, you get free *HTTP/2*!
 
 * Sample code for encoding/json
-.play json.go
+.play -edit json.go
 
+* Great Tools
+
+Go has a built-in testing framework.
+
+It is provided by the testing package and the go test command.
+
+- test
+- coverage 
+- benchmark
+
+* Go test sample
+
+Here is a complete test file that tests the strings.Index function:
+
+.code test1.go
+
+* Go test our code
+
+Let's test our code.
+
+  $ go test
+  PASS
+
+  $ go test -v
+  === RUN TestIndex
+  --- PASS: TestIndex (0.00 seconds)
+  PASS
+
+The go tool can report test coverage statistics.
+
+  $ go test -cover
+  PASS
+  coverage: 96.4% of statements
+  ok      strings    0.692s
+
+* Benchmark 
+
+Go tool can run benchmark of your code.
+
+  func BenchmarkHello(b *testing.B) {
+      for i := 0; i < b.N; i++ {
+          fmt.Sprintf("hello")
+      }
+  }
+
+Result as follow:
+
+  BenchmarkHello    10000000    282 ns/op
+
+* Great Apps
 
 

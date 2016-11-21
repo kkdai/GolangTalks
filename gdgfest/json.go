@@ -13,8 +13,8 @@ type Response1 struct {
 func main() {
 
 	res1D := &Response1{
-		Page:   1,
-		Fruits: []string{"apple", "peach", "pear"}}
+		Page: 1,
+		PPAP: []string{"Pen", "Pineapple", "Apple Pen"}}
 	res1B, _ := json.Marshal(res1D)
 	fmt.Println(string(res1B))
 }
