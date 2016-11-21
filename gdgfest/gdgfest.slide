@@ -42,7 +42,12 @@ Feature:
 - Statically Typed
 - Garbage Collection
 
-* Why?
+* Why Go?
+
+Go is an answer to problems of scale at Google.
+.image https://talks.golang.org/2012/splash/datacenter.jpg 
+
+* I know Golang comes from Google, but why we need it?
 
 Fast!
 
@@ -86,6 +91,13 @@ if you use https and golang version is bigger than 1.6, you get free *HTTP/2*!
 .play -edit json.go
 
 * Great Tools
+
+- go test
+- godoc
+- present 
+- go mobile
+
+* Go Test!
 
 Go has a built-in testing framework.
 
@@ -134,6 +146,47 @@ Result as follow:
 
   BenchmarkHello    10000000    282 ns/op
 
+* Godoc
+
+Need good documentation? Just use Godoc !
+
+- Generate document from your code.
+- Everyone can see on https://godoc.or://godoc.org 
+
+[[https://godoc.org/github.com/kkdai/mstranslator][Example]]
+
+* Present
+
+Great presentation tool for Golang, include follow feature:
+
+- Simple and Easy
+- Integrate with Golang (play code in your slide)
+
+.play hello.go
+
+* gomobile
+
+
 * Great Apps
 
+- Docker
+- Kubernetes
+- etcd
+- Prometheus
+- *Your_App*
+
+
+* How Golang change my life?
+
+Golang is easy to write and easy to portable.
+
+- We could speedup our coding time.
+
+* Project 52
+
+* Golang Meetup
+
+* Golang roadmap
+
+* Let's GO!
 
