@@ -8,7 +8,7 @@ Cloud Architect, LinkerNetworks
 evanslin@gmail.com
 http://www.evanlin.com/
 @Evan_Lin
-Some Text
+slide is [[https://github.com/kkdai/golangtalks][https://github.com/kkdai/golangtalks]]
 
 * About Me
 
@@ -49,6 +49,11 @@ Fast
 
 Make programming fun again
 
+- gofmt
+- well-define packages
+- great tools
+- great apps
+
 * Go is Fast 
 
 .image go-fast.png
@@ -59,9 +64,27 @@ Make programming fun again
 
 .image gofmt.png
 
-* Sample code
+* Make programming fun again - Great built-in package
 
-* Hello fib 
-.play fib.go 
+Golang have well-define package, such as :
 
-slide is [[https://github.com/kkdai/golangtalks][here]]
+- Powerful *concurrency* feature by built-in package with goroutine and channel.
+- *net/http*: Rich tools for http, include web server and https (http/2)
+- *encoding/json*: Useful tool for json encode and decode.
+
+* Sample code on goroutine and channel
+.play concurrent.go
+
+* Sample code for net/http
+
+*note*: this code might not run correctly in appspot because it need open port on local machine.
+
+.play web.go
+
+if you use https and golang version is bigger than 1.6, you get free *HTTP/2*!
+
+* Sample code for encoding/json
+.play json.go
+
+
+
