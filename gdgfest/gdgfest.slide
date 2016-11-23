@@ -14,15 +14,13 @@ slide is [[https://github.com/kkdai/golangtalks][https://github.com/kkdai/golang
 
 - Cloud Architect @ Linker Networks
 - [[http://golang.tw][Golang.TW]] Co-Orgnizer
-- Top 10 Taiwan Golang open source contributor ([[http://github-awards.com/][Github Award]] )
+- Top 5 Taiwan Golang open source contributor ([[http://github-awards.com/][Github Award]] )
 - Developer, Curator, Blogger
-
-
-* Programming Go
-
-.image go-dock.png
+- Curator of Codetengu
 
 * How to be a great programmer
+
+* Programming Go!
 
 .image great-go.png
 
@@ -68,6 +66,10 @@ Make Programming *FUN* again!
 
 .image gofmt.png
 
+* In case you are wondering 
+
+.image tab.jpg
+
 * Make programming fun again - Great built-in package
 
 Golang have well-define package, such as :
@@ -96,6 +98,12 @@ if you use https and golang version is bigger than 1.6, you get free *HTTP/2*!
 - godoc
 - present 
 - go mobile
+
+* Do you write your Test?
+
+.image test-fun.jpg
+
+
 
 * Go Test!
 
@@ -146,6 +154,10 @@ Result as follow:
 
   BenchmarkHello    10000000    282 ns/op
 
+* Do you write document after you complete your code?
+
+.image fun-doc.jpg
+
 * Godoc
 
 Need good documentation? Just use Godoc !
@@ -166,6 +178,14 @@ Great presentation tool for Golang, include follow feature:
 
 * gomobile
 
+Gomobile is a tool to help you build golang package for iOS/Android.
+
+When you use gomobile, you can build.
+
+- Native iOS/Android App with Golang
+- iOS/Android Golang package which you can reduce you devlopment cost. (One golang package for server/iOS/Android)
+
+.image https://raw.githubusercontent.com/golang/mobile/master/doc/caution.png
 
 * Great Apps
 
@@ -178,15 +198,84 @@ Great presentation tool for Golang, include follow feature:
 
 * How Golang change my life?
 
-Golang is easy to write and easy to portable.
+Golang is easy and fast!!
 
 - We could speedup our coding time.
 
-* Project 52
+Golang is compile language with garbage collection and could be pack into single binary
+
+- Easy to portable and deployment on server.
+
+Golang have rich toolchain and powerful concurrency.
+
+- We could write web app, web service and multi-thread console program.
+
+
+* Project 52 - Write a new project every week within One Year.
+
+Project [[https://github.com/kkdai/project52][Github]].
+
+Start from 2015/06 ~ 2016/06
+
+52 projects include:
+
+- *Tools* *for* *fun*: FBPage, InstagramDownloader, ifttt-plurk-converter..
+- *Data* *Structure*: Bloomfilter, Pubsub, Skiplist, Radix-Tree, twitter, slack-console.
+- *Automata* *Related*: nfa, dfa, e-nfa, re2epsnfa, cyk, tm.
+- *IoT* *Related*: Beacon, CoapPubsub...
+- *Paper* *Survey*: Raft, Paxos, Maglev, Gorilla..
+- *Chatbots*: LineBotTempalte...
+
+* Talks
+
+Learning Golang help me to join and share my experience in following talks:
+
+- COSCUP 2016: [[http://www.slideshare.net/EvansLin/coscup-2016-project-52-for-golang][Project 52]].
+- Modern Web 2016: [[http://www.slideshare.net/EvansLin/modern-web-2016-using-golang-to-build-a-smart-im-bot][Make Chatbot with Golang]]
+- GTG15, GTG16
+- [[https://docs.google.com/presentation/d/1KksoZxQCIsPIcZFtKdf7cZ9eacSWcKeUfgXodAbYb5g/edit?usp=sharing][ChatBot Meetup]]
+- Here :)
+
 
 * Golang Meetup
 
+
+Already have 18 meetup until now, we will have meetup in fourth week of month.
+
+GTG#19 will be 2016/12/20
+
+.image golangtw.jpg
+
+* Join Golang Taipei Meetup
+
+[[http://golang.tw][Golang.tw]]
+
+Join our Facebook Group: [[https://www.facebook.com/groups/269001993248363/743848382430386][Link]]
+
+.image gofb.png
+
+Follow our twitter: [[https://twitter.com/golangtw][golangtw]]
+
 * Golang roadmap
+
+Golang already have 7 years
+
+Currently version: 1.7.3
+
+Go 1.8: 2017/01/31
+
+- Fast compilation
+- Code generation improvements (SSA) 
+- Defer and cgo improvements (defer 30%, cgo 45%)
+- Go 1.7 support 64 bits mips, Go 1.8 will support 32 bits mips.
+
+(Refer Dave Channey: [[https://dave.cheney.net/2016/11/19/go-1-8-toolchain-improvements][Go 1.8 toolchain improvements]] )
+
+
+Go 1.9: 2017/07/31
+
+See more detail milestone [[https://github.com/golang/go/milestones][here]]
 
 * Let's GO!
 
+.image letsgo.jpg
