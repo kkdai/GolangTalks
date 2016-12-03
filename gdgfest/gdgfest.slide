@@ -124,11 +124,18 @@ Make Programming *FUN* again!
 
 .play -edit hello2.go
 
+
 * Make programming fun again - gofmt
 
 [[https://play.golang.org/p/EqGFeNyrHJ][Code is here]]
 
 .image gofmt.png
+
+* Engineering Joke
+
+.image gofmt2.png
+
+When you write Golang, you don't need to go to park!
 
 * In case you are wondering 
 
