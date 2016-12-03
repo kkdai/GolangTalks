@@ -2,7 +2,7 @@ In Love with Golang
 How Golang change my life
 
 GDG DevFest Taipei 2016
-15:04 3 Dec 2016
+14:15 3 Dec 2016
 Tags: golang, present, gdgfest
 
 Evan Lin
@@ -10,7 +10,6 @@ Cloud Architect, LinkerNetworks
 evanslin@gmail.com
 http://www.evanlin.com/
 @Evan_Lin
-slide is [[https://github.com/kkdai/golangtalks][https://github.com/kkdai/golangtalks]]
 
 * About Me
 
@@ -22,13 +21,64 @@ slide is [[https://github.com/kkdai/golangtalks][https://github.com/kkdai/golang
 - Developer, Curator, Blogger
 - Curator of Codetengu
 
+Slide: https://goo.gl/pL7kvG
+
 * How to be a great programmer
 
 * Programming Go!
 
 .image great-go.png
+ 
+* How I met Golang 
 
-* Whis is Golang?
+Before learn Go, I am ..
+
+- Multi-media industry over 10 years ( include 5 years project management)
+- Working in hardware company advanced technology center
+
+.image https://blog.golang.org/gopher/usergroups.png
+
+* One day
+
+Friend: "Hi Evan, I just learn a new programming language!!"
+
+Me: "What? What language?"
+
+Friend: "Go!"
+
+* What is Go? 
+
+.image https://imgflip.com/s/meme/Scared-Cat.jpg
+
+
+* After I google it!
+
+.image http://www.tv-asahi.co.jp/ch/contents/anime/0183/img/0_4.png
+
+* So, I google it Again.
+
+Go is an answer to problems of scale at Google.
+.image https://talks.golang.org/2012/splash/datacenter.jpg 
+
+* Problems of Scale: System Scale
+
+- designed to scale to 10⁶⁺ machines
+- everyday jobs run on 1000s of machines
+- jobs coordinate, interact with others in the system
+- lots going on at once
+
+Solution: great support for concurrency
+
+* Problems of Scale: Engineering Scale
+
+- 5000+ developers across 40+ offices
+- 20+ changes per minute
+- 50% of code base changes every month
+- single code tree 
+
+Solution: design a language for large code bases
+
+* What is Golang?
 
 Create by Google (That's why I here :p)
 
@@ -44,25 +94,35 @@ Feature:
 - Statically Typed
 - Garbage Collection
 
-* Why Go?
-
-Go is an answer to problems of scale at Google.
-.image https://talks.golang.org/2012/splash/datacenter.jpg 
-
-* I know Golang comes from Google, but why we need it?
+* I know Golang comes from Google, why we need another new language?
 
 Fast!
 
 Make Programming *FUN* again!
 
+- simple and easy to learn 
 - gofmt
 - well-define packages
 - great tools
 - great apps
 
-* Go is Fast 
+* Compiling Go is Fast!
+
+.image compile-fast.png
+
+* Running Go is Fast! 
 
 .image go-fast.png
+
+
+* Simple and easy to learn (Hello Google!)
+
+.play -edit hello.go
+
+
+* Simple and easy to learn (Basic Structure!)
+
+.play -edit hello2.go
 
 * Make programming fun again - gofmt
 
@@ -102,12 +162,11 @@ if you use https and golang version is bigger than 1.6, you get free *HTTP/2*!
 - godoc
 - present 
 - go mobile
+- ide (vim-go, vs-code)
 
 * Do you write your Test?
 
 .image test-fun.jpg
-
-
 
 * Go Test!
 
@@ -171,11 +230,32 @@ Need good documentation? Just use Godoc !
 
 [[https://godoc.org/github.com/kkdai/mstranslator][Example]]
 
-* Present
+* Present (1)
 
 Great presentation tool for Golang, include follow feature:
 
 - Simple and Easy
+
+  $ cat sample.slide
+
+  Title of document
+  Subtitle of document
+  15:04 2 Jan 2006
+  Tags: foo, bar, baz
+
+  Author Name
+  Job title, Company
+  joe@example.com
+  http://url/
+  @twitter_name
+  Some Text
+
+  * Title of slide or section (must have asterisk)
+
+  Some Text
+
+* Present (2)
+
 - Integrate with Golang (play code in your slide)
 
 .play hello.go
@@ -190,6 +270,22 @@ When you use gomobile, you can build.
 - iOS/Android Golang package which you can reduce you devlopment cost. (One golang package for server/iOS/Android)
 
 .image https://raw.githubusercontent.com/golang/mobile/master/doc/caution.png
+
+* gomobile example
+
+.image gomobile1.png
+
+* gomobile example (cont)
+
+.image gomobile2.png
+
+
+* IDE
+
+There are lots IDE for developing Golang, I just recomment my favor two:
+
+- vim-go
+- vscode 
 
 * Great Apps
 
@@ -288,6 +384,23 @@ See more detail milestone [[https://github.com/golang/go/milestones][here]]
 * Let's GO!
 
 .image letsgo.jpg
+
+*  Don't be afraid, if you come from Python
+
+- [[https://blog.disqus.com/trying-out-this-go-thing][Disqus: Trying out this Go thing]]
+- [[https://blog.rackspace.com/making-openstack-powered-rackspace-cloud-files-buzz-with-hummingbird/][Rackspace: Making OpenStack-Powered Rackspace Cloud Files Buzz With Hummingbird]]
+- [[https://blog.repustate.com/migrating-entire-api-go-python/][Repustate: From Python to Go: migrating our entire API]]
+- [[https://www.spacemonkey.com/blog/posts/go-space-monkey][Spacemonkey: Python to Go]]
+- [[http://jordanorelli.com/post/31533769172/why-i-went-from-python-to-go-and-not-nodejs][Why I went from Python to Go (and not node.js)]]
+- [[https://sendgrid.com/blog/convince-company-go-golang/][How to Convince Your Company to Go With Golang]]
+
+* Don't be afraid, if you come from Node
+
+- [[https://medium.com/@theflapjack103/the-way-of-the-gopher-6693db15ae1f#.yw5lk8t25][Digg]]
+- [[https://medium.com/@tjholowaychuk/farewell-node-js-4ba9e7f3e52b#.3hjxf6pbp][Apex/TJ Holowaychuk]]
+- [[http://thenewstack.io/from-node-js-to-go-why-one-startup-made-the-switch/][From Node.js To Go, Why One Startup Made The Switch]]
+- [[https://www.quora.com/Why-did-Koding-switch-from-Node-js-to-Go][Why did Koding switch from Node.js to Go?]]
+- [[http://blog.davebalmer.com/letting-go-of-node-js/][Letting Go of Node.js]]
 
 * One More Thing!!!
 
