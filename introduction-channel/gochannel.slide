@@ -1,4 +1,4 @@
-Quick introduction channels
+Introduction go channels
 buffered/unbuffered channel
 
 Linker 
@@ -82,4 +82,17 @@ Slide: https://goo.gl/pL7kvG
 
 .code fanout.go /^func sq/,/^}/
 
-.link https://play.golang.org/p/8PclrqJikez
+.link https://play.golang.org/p/vHgKZcvFzl6
+
+* Advanced: channel pattern select
+
+.code fanout.go /^func merge/,/^}/
+
+.link https://play.golang.org/p/vHgKZcvFzl6
+
+* Advanced: channel pattern select
+
+.code select.go /^func RunLoop/,/^}/
+
+
+
