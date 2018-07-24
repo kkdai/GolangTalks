@@ -51,24 +51,35 @@ Slide: https://goo.gl/pL7kvG
 
 .play -edit buffered-channel-23.go
 
-* Go pipeline 
+* Go Pipeline 
 
 .image gopher-pipeline.png 400 800
 
-* Go pipeline 
+* Go Pipeline 
 
 .code pipeline.go /^func gen/,/^}/
 
 .link https://play.golang.org/p/t0XuGd3iBnt
 
-* Go pipeline 
+* Go Pipeline 
 
 .code pipeline.go /^func sq/,/^}/
 
 .link https://play.golang.org/p/t0XuGd3iBnt
 
-* Go pipeline 
+* Go Pipeline 
 
 .code pipeline.go /^func main/,/^}/
 
 .link https://play.golang.org/p/t0XuGd3iBnt
+
+
+* Go Fanout 
+
+.image fanout.png 500 800
+
+* Go Fanout 
+
+.code fanout.go /^func sq/,/^}/
+
+.link https://play.golang.org/p/8PclrqJikez
