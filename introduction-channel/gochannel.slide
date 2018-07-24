@@ -50,3 +50,25 @@ Slide: https://goo.gl/pL7kvG
 - Solution: Close it to avoid deadlock
 
 .play -edit buffered-channel-23.go
+
+* Go pipeline 
+
+.image gopher-pipeline.png 400 800
+
+* Go pipeline 
+
+.code pipeline.go /^func gen/,/^}/
+
+.link https://play.golang.org/p/t0XuGd3iBnt
+
+* Go pipeline 
+
+.code pipeline.go /^func sq/,/^}/
+
+.link https://play.golang.org/p/t0XuGd3iBnt
+
+* Go pipeline 
+
+.code pipeline.go /^func main/,/^}/
+
+.link https://play.golang.org/p/t0XuGd3iBnt
