@@ -1,7 +1,7 @@
 Introduction go channels
 buffered/unbuffered channel
 
-Linker 
+Training 
 July 2018
 Tags: golang, present
 
@@ -93,4 +93,21 @@ http://www.evanlin.com/
 .code select.go /^func RunLoop/,/^}/
 
 
+* Advanced Pipeline: Go-Kit (Endpoint)
 
+.code go-kit.go /^func annotate/,/^}/
+
+.code go-kit.go /^func myEndpoint/,/^}/
+
+* Advanced Pipeline: Go-Kit (Endpoint) How to use it
+
+.code go-kit.go /^func Chain/,/^}/
+
+
+* Advanced Go-Kit + Channel
+
+.code gokit-channel.go /^func readImages/,/^}/
+
+* Advanced Go-Kit + Channel
+
+.code gokit-channel.go /^func ImagePreprocessingPipeline/,/^}/
