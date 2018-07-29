@@ -5,7 +5,6 @@ package main
 import (
 	"fmt"
 	"sync"
-	"time"
 )
 
 func gen(nums ...int) <-chan int {
@@ -20,25 +19,13 @@ func gen(nums ...int) <-chan int {
 }
 
 func sq(in <-chan int) <-chan int {
-	out := make(chan int, 1000)
-
+	out := make(chan int)
 	go func() {
-		wg := sync.WaitGroup{}
-		for i := 0; i <= 3; i++ {
-			wg.Add(1)
-			go func() {
-				defer wg.Done()
-				for n := range in {
-					out <- n * n
-					fmt.Printf("%d is out queue \n", n)
-					time.Sleep(1 * time.Second)
-				}
-			}()
+		for n := range in {
+			out <- n * n
 		}
-		wg.Wait()
 		close(out)
 	}()
-
 	return out
 }
 
@@ -62,12 +49,10 @@ func merge(done <-chan struct{}, cs ...<-chan int) <-chan int {
 }
 
 func main() {
-	// Set up the pipeline.
 	c := gen(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11)
-	out := sq(sq(c))
+	// fan-out
+	c1 := sq(c))
+	c1 := sq(c))
 
-	// Consume the output.
-	for v := range out {
-		fmt.Println(v)
-	}
+	// ...
 }
