@@ -58,7 +58,7 @@ func main() {
 	
 	// Fan-out
 	c1 := sq(c))
-	c1 := sq(c))
+	c2 := sq(c))
 
     // Fan-in: Consume the merged output from c1 and c2.
     for n := range merge(c1, c2) {
