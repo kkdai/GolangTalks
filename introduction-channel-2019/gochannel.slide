@@ -1,0 +1,110 @@
+Introducing the go channel and pipeline 
+buffered/unbuffered channel
+
+Golang Taipei Meetup 
+July 2019
+Tags: golang, present
+
+Evan Lin
+Technical Evangelist, LINE
+evan.if.lin@linecorp.com
+http://www.evanlin.com/
+@Evan_Lin
+
+
+* About Me
+- Technical Evangelist@ LINE
+- [[http://golang.tw][Golang.TW]] Co-Orgnizer
+- Developer, Curator, Blogger
+.link https://tinyurl.com/ycmf5zsf
+
+
+* Go channel - Unbuffered Channels
+.play -edit simple-channel.go
+
+
+* Buffered Channel 
+.play -edit buffered-channel-1.go
+
+
+* Buffered Channel - Iteration
+
+- Buffered channel could be iterated
+.play -edit buffered-channel-21.go
+
+
+* Buffered Channel - Iteration
+- What's the problem?
+.play -edit buffered-channel-22-error.go
+
+
+* Buffered Channel - Iteration
+- Solution: Close it to avoid deadlock
+.play -edit buffered-channel-23.go
+
+
+* Go Pipeline 
+.image gopher-pipeline.png 400 800
+
+
+* Go Pipeline 
+.code pipeline.go /^func gen/,/^}/
+.link https://play.golang.org/p/t0XuGd3iBnt
+
+
+* Go Pipeline 
+.code pipeline.go /^func sq/,/^}/
+.link https://play.golang.org/p/t0XuGd3iBnt
+
+
+* Go Pipeline 
+.code pipeline.go /^func main/,/^}/
+.link https://play.golang.org/p/t0XuGd3iBnt
+
+
+* Go Fan-out 
+.image fanout.png 500 800
+
+
+* Go Fan-out 
+.code fanout.go /^func sq/,/^}/
+.code fanout.go /^func main/,/^}/
+.link https://play.golang.org/p/vHgKZcvFzl6
+
+
+* Go Fan-in
+.image fanin.jpg 400 800
+
+* Go Fan-in 
+.code fanin.go /^func merge/,/^}/
+
+
+* Go Fan-in 
+.code fanin.go /^func main/,/^}/
+
+
+* Advanced: channel pattern select
+.code fanout.go /^func merge/,/^}/
+.link https://play.golang.org/p/vHgKZcvFzl6
+
+* Advanced: channel pattern select
+.code select.go /^func RunLoop/,/^}/
+
+
+* Advanced Pipeline: Go-Kit (Endpoint)
+.code go-kit.go /^func annotate/,/^}/
+.code go-kit.go /^func myEndpoint/,/^}/
+
+
+* Advanced Pipeline: Go-Kit (Endpoint) How to use it
+.code go-kit.go /^func Chain/,/^}/
+
+
+* Advanced Go-Kit + Channel
+.code gokit-channel.go /^func readImages/,/^}/
+
+
+* Advanced Go-Kit + Channel
+.code gokit-channel.go /^func ImagePreprocessingPipeline/,/^}/
+
+* Q&A
