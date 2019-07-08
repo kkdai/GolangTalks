@@ -93,7 +93,7 @@ http://www.evanlin.com/
 * Advanced Pipeline: Go-Kit (Endpoint)
 .code go-kit.go /^func annotate/,/^}/
 .code go-kit.go /^func myEndpoint/,/^}/
-
+.link https://github.com/go-kit/kit/blob/master/endpoint/endpoint_example_test.go
 
 * Advanced Pipeline: Go-Kit (Endpoint) How to use it
 .code go-kit.go /^func Chain/,/^}/
