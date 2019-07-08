@@ -97,6 +97,7 @@ http://www.evanlin.com/
 
 * Advanced Pipeline: Go-Kit (Endpoint) How to use it
 .code go-kit.go /^func Chain/,/^}/
+.link https://github.com/go-kit/kit/blob/master/endpoint/endpoint_example_test.go
 
 
 * Advanced Go-Kit + Channel
