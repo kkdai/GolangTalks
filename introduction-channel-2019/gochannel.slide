@@ -26,6 +26,13 @@ http://www.evanlin.com/
 * Why we need channels on data pipeline(3)
 .image pipeline3.jpg 400 1000
 
+* Agenda
+- Introduce Unbuffered/Buffered channels
+- Advanced: Channel pattern 
+- Channels in pipeline
+- How to use channel in Fan-in / Fan-out
+- Use go-kit for data pipeline with channel
+
 * Go channel - Unbuffered Channels
 .play -edit simple-channel.go
 
