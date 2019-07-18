@@ -25,13 +25,6 @@ http://www.evanlin.com/
 * Buffered Channel 
 .play -edit buffered-channel-1.go
 
-
-* Buffered Channel - Iteration
-
-- Buffered channel could be iterated
-.play -edit buffered-channel-21.go
-
-
 * Buffered Channel - Iteration
 - What's the problem?
 .play -edit buffered-channel-22-error.go
