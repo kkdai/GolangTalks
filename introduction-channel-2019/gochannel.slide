@@ -42,6 +42,13 @@ http://www.evanlin.com/
 - Solution: Close it to avoid deadlock
 .play -edit buffered-channel-23.go
 
+* Advanced: channel pattern select
+.code fanout.go /^func merge/,/^}/
+.link https://play.golang.org/p/vHgKZcvFzl6
+
+* Advanced: channel pattern select
+.code select.go /^func RunLoop/,/^}/
+
 
 * Go Pipeline 
 .image gopher-pipeline.png 400 800
@@ -83,20 +90,12 @@ http://www.evanlin.com/
 .code fanin.go /^func main/,/^}/
 
 
-* Advanced: channel pattern select
-.code fanout.go /^func merge/,/^}/
-.link https://play.golang.org/p/vHgKZcvFzl6
-
-* Advanced: channel pattern select
-.code select.go /^func RunLoop/,/^}/
-
-
-* Advanced Pipeline: Go-Kit (Endpoint)
+* Go-Kit (Endpoint)
 .code go-kit.go /^func annotate/,/^}/
 .code go-kit.go /^func myEndpoint/,/^}/
 .link https://github.com/go-kit/kit/blob/master/endpoint/endpoint_example_test.go
 
-* Advanced Pipeline: Go-Kit (Endpoint) How to use it
+* Go-Kit (Endpoint) How to use it
 .code go-kit.go /^func Chain/,/^}/
 .link https://github.com/go-kit/kit/blob/master/endpoint/endpoint_example_test.go
 
