@@ -48,17 +48,17 @@ http://www.evanlin.com/
 
 * Go Pipeline 
 .code pipeline.go /^func gen/,/^}/
-.link https://play.golang.org/p/t0XuGd3iBnt
+.link https://play.golang.org/p/h9ZTraJdMON
 
 
 * Go Pipeline 
 .code pipeline.go /^func sq/,/^}/
-.link https://play.golang.org/p/t0XuGd3iBnt
+.link https://play.golang.org/p/h9ZTraJdMON
 
 
 * Go Pipeline 
 .code pipeline.go /^func main/,/^}/
-.link https://play.golang.org/p/t0XuGd3iBnt
+.link https://play.golang.org/p/h9ZTraJdMON
 
 
 * Go Fan-out 
