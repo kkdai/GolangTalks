@@ -7,19 +7,13 @@ import (
 	"github.com/go-kit/kit/endpoint"
 )
 
-func ImagePreprocessingPipeline(numOfDatasetLoaders) {
+func ImagePreprocessingPipeline(numOfDatasetLoader, numOfImageDecoders, numOfImagePreprocessors) {
 	pipeline := endpoint.Chain(
 		// CPU-bound + IO-bound task
 		loadImageDataset(numOfDatasetLoaders),
 
-		// IO-bound task
-		readImages(numOfImageReaders),
-
 		// CPU-bound task
 		decodeImages(numOfImageDecoders),
-
-		// IO-bound task
-		dumpImages(dataDir, numOfImageWriters),
 
 		// Image Preprocessing
 		preprocessingImages(numOfImagePreprocessors),

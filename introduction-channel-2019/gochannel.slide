@@ -91,6 +91,7 @@ http://www.evanlin.com/
 .play fan-in-out.go /^func main/,/^}/
 .link https://play.golang.org/p/PhktEARch0j
 
+* Use Go-Kit endpoint for pipeline
 
 * Go-Kit (Endpoint)
 .code go-kit.go /^func annotate/,/^}/
@@ -98,17 +99,18 @@ http://www.evanlin.com/
 .link https://github.com/go-kit/kit/blob/master/endpoint/endpoint_example_test.go
 
 * Go-Kit (Endpoint) How to use it
-.code go-kit.go /^func Chain/,/^}/
-.link https://github.com/go-kit/kit/blob/master/endpoint/endpoint_example_test.go
+.code go-kit.go /^func main/,/^}/
+.link https://play.golang.org/p/_WDD1L6RwJT
 
-* Combine Go-Kit with buffered channel
+* Advanced: Combine Go-Kit with Buffered channel
 
-* Advanced Go-Kit + Channel
+* Go-Kit + Buffered Channel: Define Middleware()
 .code gokit-channel.go /^func readImages/,/^}/
 
 
-* Advanced Go-Kit + Channel
+* Go-Kit + Buffered Channel: How to use it.
 .code gokit-channel.go /^func ImagePreprocessingPipeline/,/^}/
+
 
 * Q&A
 

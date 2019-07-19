@@ -9,7 +9,7 @@ import (
 	"github.com/go-kit/kit/endpoint"
 )
 
-func Chain() {
+func main() {
 	e := endpoint.Chain(
 		annotate("first"),
 		annotate("second"),
