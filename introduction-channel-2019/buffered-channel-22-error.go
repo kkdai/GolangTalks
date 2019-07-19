@@ -5,7 +5,7 @@ package main
 import "fmt"
 
 func main() {
-	ch := make(chan int, 3) //Create size 3 buffered channel
+	ch := make(chan int, 3) //Create buffered channel with a capacity of 3
 	go func() {
 		ch <- 1
 		ch <- 2

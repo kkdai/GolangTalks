@@ -7,7 +7,7 @@ Tags: golang, present
 
 Evan Lin
 Technical Evangelist, LINE
-evan.if.lin@linecorp.com
+evanslin@gmail.com
 http://www.evanlin.com/
 @Evan_Lin
 
@@ -28,7 +28,6 @@ http://www.evanlin.com/
 
 * Agenda
 - Introduce Unbuffered/Buffered channels
-- Advanced: Channel pattern 
 - Channels in pipeline
 - How to use channel in Fan-in / Fan-out
 - Use go-kit for data pipeline with channel
@@ -48,32 +47,24 @@ http://www.evanlin.com/
 * Buffered Channel - Iteration
 - Solution: Close it to avoid deadlock
 .play -edit buffered-channel-23.go
-
-* Advanced: channel pattern select
-.code fanout.go /^func merge/,/^}/
-.link https://play.golang.org/p/vHgKZcvFzl6
-
-* Advanced: channel pattern select
-.code select.go /^func RunLoop/,/^}/
-
-
+
 * Go Pipeline 
 .image gopher-pipeline.png 400 800
 
 
 * Go Pipeline 
 .code pipeline.go /^func gen/,/^}/
-.link https://play.golang.org/p/h9ZTraJdMON
+.link https://play.golang.org/p/Zerr7phrGqn
 
 
 * Go Pipeline 
 .code pipeline.go /^func sq/,/^}/
-.link https://play.golang.org/p/h9ZTraJdMON
+.link https://play.golang.org/p/Zerr7phrGqn
 
 
 * Go Pipeline 
 .code pipeline.go /^func main/,/^}/
-.link https://play.golang.org/p/h9ZTraJdMON
+.link https://play.golang.org/p/Zerr7phrGqn
 
 
 * Go Fan-out 
@@ -106,6 +97,7 @@ http://www.evanlin.com/
 .code go-kit.go /^func Chain/,/^}/
 .link https://github.com/go-kit/kit/blob/master/endpoint/endpoint_example_test.go
 
+* Combine Go-Kit with buffered channel
 
 * Advanced Go-Kit + Channel
 .code gokit-channel.go /^func readImages/,/^}/
@@ -115,3 +107,6 @@ http://www.evanlin.com/
 .code gokit-channel.go /^func ImagePreprocessingPipeline/,/^}/
 
 * Q&A
+
+.link https://blog.golang.org/pipelines
+.link https://blog.golang.org/advanced-go-concurrency-patterns
