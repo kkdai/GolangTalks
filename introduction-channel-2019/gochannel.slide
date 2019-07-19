@@ -32,6 +32,7 @@ http://www.evanlin.com/
 - How to use channel in Fan-in / Fan-out
 - Use go-kit for data pipeline with channel
 
+
 * Go channel - Unbuffered Channels
 .play -edit simple-channel.go
 
@@ -47,7 +48,9 @@ http://www.evanlin.com/
 * Buffered Channel - Iteration
 - Solution: Close it to avoid deadlock
 .play -edit buffered-channel-23.go
+
 
+
 * Go Pipeline 
 .image gopher-pipeline.png 400 800
 
@@ -63,7 +66,7 @@ http://www.evanlin.com/
 
 
 * Go Pipeline 
-.code pipeline.go /^func main/,/^}/
+.play pipeline.go /^func main/,/^}/
 .link https://play.golang.org/p/Zerr7phrGqn
 
 
@@ -108,5 +111,10 @@ http://www.evanlin.com/
 
 * Q&A
 
+- Go Concurrency Patterns: Pipelines and cancellation
 .link https://blog.golang.org/pipelines
+- Advanced Go Concurrency Patterns
 .link https://blog.golang.org/advanced-go-concurrency-patterns
+- Understanding Channels
+.link https://about.sourcegraph.com/go/understanding-channels-kavya-joshi
+.link https://www.youtube.com/watch?v=KBZlN0izeiY
