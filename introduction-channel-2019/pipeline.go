@@ -36,7 +36,7 @@ func sq(in <-chan int) <-chan int {
 
 func main() {
 	// Set up the pipeline.
-	c := gen(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11)
+	c := gen(2, 3)
 	out := sq(c)
 
 	// Consume the output.

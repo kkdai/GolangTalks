@@ -70,25 +70,26 @@ http://www.evanlin.com/
 .link https://play.golang.org/p/Zerr7phrGqn
 
 
+* Go Fan-in
+.image fanin.jpg 400 800
+
+
+* Go Fan-in 
+.code fan-in-out.go /^func merge/,/^}/
+
+
 * Go Fan-out 
 .image fanout.png 500 800
 
 
 * Go Fan-out 
-.code fanout.go /^func sq/,/^}/
-.code fanout.go /^func main/,/^}/
-.link https://play.golang.org/p/vHgKZcvFzl6
+.code fan-in-out.go /^func sq/,/^}/
+.link https://play.golang.org/p/PhktEARch0j
 
 
-* Go Fan-in
-.image fanin.jpg 400 800
-
-* Go Fan-in 
-.code fanin.go /^func merge/,/^}/
-
-
-* Go Fan-in 
-.code fanin.go /^func main/,/^}/
+* Go Fan-in / Fan-out
+.play fan-in-out.go /^func main/,/^}/
+.link https://play.golang.org/p/PhktEARch0j
 
 
 * Go-Kit (Endpoint)
