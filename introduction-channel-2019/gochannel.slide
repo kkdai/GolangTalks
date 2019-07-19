@@ -91,6 +91,10 @@ http://www.evanlin.com/
 .play fan-in-out.go /^func main/,/^}/
 .link https://play.golang.org/p/PhktEARch0j
 
+
+* Go Fan-in / Fan-out (diagram)
+.image pipeline.png 500 1000
+
 * Use Go-Kit endpoint for pipeline
 
 * Go-Kit (Endpoint)
