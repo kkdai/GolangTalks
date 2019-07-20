@@ -106,6 +106,12 @@ http://www.evanlin.com/
 .code go-kit.go /^func main/,/^}/
 .link https://play.golang.org/p/_WDD1L6RwJT
 
+
+* FYI: Go playground support 3rd party import since May 2019, 
+.image playground.jpg 500 700
+.link https://twitter.com/bradfitz/status/1128069715455123457
+
+
 * Advanced: Combine Go-Kit with Buffered channel
 
 * Go-Kit + Buffered Channel: Define Middleware()
