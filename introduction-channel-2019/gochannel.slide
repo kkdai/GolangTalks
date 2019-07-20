@@ -42,12 +42,12 @@ http://www.evanlin.com/
 
 * Buffered Channel - Iteration
 - What's the problem?
-.play -edit buffered-channel-22-error.go
+.play -edit buffered-channel-2-error.go
 
 
 * Buffered Channel - Iteration
 - Solution: Close it to avoid deadlock
-.play -edit buffered-channel-23.go
+.play -edit buffered-channel-3.go
 
 
 
@@ -84,12 +84,12 @@ http://www.evanlin.com/
 
 * Go Fan-out 
 .code fan-in-out.go /^func sq/,/^}/
-.link https://play.golang.org/p/PhktEARch0j
+.link https://play.golang.org/p/VoZdosxo9AR
 
 
 * Go Fan-in / Fan-out
 .play fan-in-out.go /^func main/,/^}/
-.link https://play.golang.org/p/PhktEARch0j
+.link https://play.golang.org/p/VoZdosxo9AR
 
 
 * Go Fan-in / Fan-out (diagram)

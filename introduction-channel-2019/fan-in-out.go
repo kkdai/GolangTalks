@@ -8,7 +8,7 @@ import (
 )
 
 func gen(nums ...int) <-chan int {
-	out := make(chan int, 1000)
+	out := make(chan int)
 	go func() {
 		for _, n := range nums {
 			out <- n
