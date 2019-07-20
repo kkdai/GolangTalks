@@ -95,6 +95,15 @@ http://www.evanlin.com/
 * Go Fan-in / Fan-out (diagram)
 .image pipeline.png 500 1000
 
+
+
+* Go Fan-in / Fan-out with buffered channel
+.code fan-in-out-buffer.go /^func gen/,/^}/
+.play fan-in-out-buffer.go /^func main/,/^}/
+.link https://play.golang.org/p/nyxdZWcR3gJ
+
+
+
 * Use Go-Kit endpoint for pipeline
 
 * Go-Kit (Endpoint)
