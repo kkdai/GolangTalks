@@ -32,8 +32,21 @@ http://www.evanlin.com/
 - How to use channel in Fan-in / Fan-out
 - Use go-kit for data pipeline with channel
 
+* Go Channel
+.image go-channel.jpg 480 900
 
-* Go channel - Unbuffered Channels
+* Go Channel - basic
+.play channel-basic.go /^func main/,/^}/
+- Send to unbuffered channel without use it, will cause panic.
+.image go-panic.jpg 260 260
+ 
+* Go Channel - basic (2)
+.play channel-basic2.go /^func main/,/^}/
+- Send to closed channel cause panic.
+.image go-close-channel.jpg 260 360
+
+
+* Go Channel - Unbuffered Channels
 .play -edit simple-channel.go
 
 
@@ -57,12 +70,10 @@ http://www.evanlin.com/
 
 * Go Pipeline 
 .code pipeline.go /^func gen/,/^}/
-.link https://play.golang.org/p/Zerr7phrGqn
 
 
 * Go Pipeline 
 .code pipeline.go /^func sq/,/^}/
-.link https://play.golang.org/p/Zerr7phrGqn
 
 
 * Go Pipeline 
@@ -79,12 +90,7 @@ http://www.evanlin.com/
 
 
 * Go Fan-out 
-.image fanout.png 500 800
-
-
-* Go Fan-out 
 .code fan-in-out.go /^func sq/,/^}/
-.link https://play.golang.org/p/VoZdosxo9AR
 
 
 * Go Fan-in / Fan-out
@@ -102,6 +108,13 @@ http://www.evanlin.com/
 .play fan-in-out-buffer.go /^func main/,/^}/
 .link https://play.golang.org/p/nyxdZWcR3gJ
 
+
+* Explicit cancellation (Merge)
+.code faninout-stop.go /^func merge/,/^}/
+
+* Explicit cancellation (Main)
+.play -edit faninout-stop.go /^func main/,/^}/
+.link https://play.golang.org/p/3iOdMEzp7Uo
 
 
 * Use Go-Kit endpoint for pipeline

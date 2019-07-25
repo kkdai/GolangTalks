@@ -5,6 +5,7 @@ package main
 import (
 	"fmt"
 	"sync"
+	"time"
 )
 
 func gen(nums ...int) <-chan int {
@@ -49,6 +50,7 @@ func merge(cs ...<-chan int) <-chan int {
 	go func() {
 		wg.Wait()
 		close(out)
+		fmt.Println("Merge channel close")
 	}()
 	return out
 }
@@ -64,4 +66,6 @@ func main() {
 	for n := range merge(c1, c2) {
 		fmt.Println(n) // 4 then 9, or 9 then 4
 	}
+	fmt.Println("main close")
+	time.Sleep(1 * time.Second)
 }
