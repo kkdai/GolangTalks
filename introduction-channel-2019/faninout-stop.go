@@ -63,10 +63,10 @@ func main() {
 	// Fan-in: Consume the merged output from c1 and c2.
 	done := make(chan struct{})
 	out := merge(done, c1, c2)
-	// 	done <- struct{}{} //What is I uncomment it? 4 or 9?
+	// done <- struct{}{} //What is I uncomment it? 4 or 9?
 	fmt.Println(<-out)
 	fmt.Println(<-out)
-	done <- struct{}{} //What is I uncomment it? 4 or 9? or other?
+	// done <- struct{}{} //What is I uncomment it? 4 or 9? or other?
 	fmt.Println("main close")
 	time.Sleep(1 * time.Second)
 }
