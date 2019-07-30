@@ -153,3 +153,7 @@ http://www.evanlin.com/
 - Understanding Channels
 .link https://about.sourcegraph.com/go/understanding-channels-kavya-joshi
 .link https://www.youtube.com/watch?v=KBZlN0izeiY
+
+* LINE is hiring Go developers ( LINE SPOT )
+.image spot.png 400 1000
+- Build our micro-services on the Kubernetes (KAAS: Kubernetes As An Services)
