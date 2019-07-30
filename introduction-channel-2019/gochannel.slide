@@ -114,7 +114,7 @@ http://www.evanlin.com/
 
 * Explicit cancellation (Main)
 .play -edit faninout-stop.go /^func main/,/^}/
-.link https://play.golang.org/p/3iOdMEzp7Uo
+.link https://play.golang.org/p/Zwy6mZgWvE9
 
 
 * Use Go-Kit endpoint for pipeline
