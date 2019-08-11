@@ -37,7 +37,7 @@ http://www.evanlin.com/
 
 * Go Channel - basic
 .play channel-basic.go /^func main/,/^}/
-- Send to unbuffered channel without use it, will cause panic.
+- Send to unbuffered channel without use it on main func, will cause panic.
 .image go-panic.jpg 260 260
  
 * Go Channel - basic (2)
